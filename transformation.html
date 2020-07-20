@@ -4,9 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>transformations</title>
+  <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      background-color: green;
+      font-size: 100px;
+      animation: 1.5s scaleAndRotateSqure infinite ease-in-out;
+    }
+    @keyframes scaleAndRotateSqure {
+      0%{
+        transform: none;
+      }
+      50%{
+        transform: rotate(1turn) scale(.5, .5);
+        color: blue
+      }
+      100%{
+        transform: none;
+        color: yellow;
+      }
+    }
+
+    }
+  </style>
 </head>
 <body>
-
+  <div class="box">baek</div>
 </body>
 </html>
